@@ -9,6 +9,9 @@ Java 개발자 과정 프론트앤드 리포지토리
     - 웹 기본구조
     - HTML5 기본태그
 
+1일차 학습내용
+<!-- ![멀티미디어](https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day01.png) : 이렇게 사용하면 사이즈 변경 불가 -->
+<img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day01.png" width="300">
 
 
 

@@ -12,3 +12,9 @@ Java 개발자 과정 프론트앤드 리포지토리
 1일차 학습내용
 <!-- ![멀티미디어](https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day01.png) : 이렇게 사용하면 사이즈 변경 불가 -->
 <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day01.png" width="300">
+
+## 2일차
+- HTML5 학습
+    - HTML5 입력태그
+    - CSS3 기본
+    - CSS3 고급

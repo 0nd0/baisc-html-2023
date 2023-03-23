@@ -25,5 +25,7 @@ Java 개발자 과정 프론트앤드 리포지토리
     - HTML 레이아웃
     - 반응형 웹
 
-3일차 레이아웃<br>
-<img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day03.png" width="600">
+    3일차 레이아웃<br>
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day03.png" width="600">
+
+## 4일차

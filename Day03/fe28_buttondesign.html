@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>버튼 만들기</title>
+    <style>
+        .button {
+            width: 200px; height: 60px;
+            background-color: rgb(142, 195, 255);
+            border-width: 10px; border-style: solid; 
+            border-color: rgb(232, 230, 252); border-radius: 40px;
+            box-shadow: 10px 10px 10px #cccccc;
+            /* 박스 섀도우에 px 두개 넣으면 진하게되고, 한개 더 넣으면 연하게 됨 */
+        }
+        .button > a {
+            display: block;
+            line-height: 60px; /* 글자 버튼 안에서 가운데 정렬하기 => 상위 .button의 height만큼 해주면 됨 */
+            text-decoration-line: none; /* a태그의 밑줄 없애기 */
+        }
+        .font_big { font-size: 25px; }
+        .font_bold { font-weight: bold; }
+        .font_center { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <!--target 속성-->
+        <a href="https://www.google.com" target="_blank" class="font_big font_bold font_center">구글</a>
+    </div>
+</body>
+</html>

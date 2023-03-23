@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>CSS 위치 속성</title>
+    <style>
+        body > div { /* body 밑에 div(자손태그) */
+            width: 420px; height: 120px;
+            position: relative;
+            border: 2px solid pink; /* 얘는 개발 중간에 어디영역인지 확인하려고 만든거임*/ 
+            overflow: hidden; /* hidden : 넘치면 잘라버리기 */
+            /* overflow-y: scroll;  overflow-y : 세로 스크롤 생성 */
+        }
+        .box {
+            width: 100px; height: 100px;
+            position: absolute;
+        }
+        .box:nth-child(1) {
+            background-color: red;
+            left: 10px; top: 10px;
+            z-index: 100;
+        }
+        .box:nth-child(2) {
+            background-color: green;
+            left: 50px; top: 50px;
+            z-index: 10;
+        }
+        .box:nth-child(3) {
+            background-color: blue;
+            left: 90px; top: 90px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit</h1>
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h1>Lorem ipsum dolor sit</h1>
+</body>
+</html>

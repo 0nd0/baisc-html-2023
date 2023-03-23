@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>수평 정렬</title>
+    <style>
+        .box {
+            width: 100px; height: 100px;
+            float: right; /* 우측 정렬이므로 red가 제일 오른쪽에 붙음 */
+        }
+        .box:nth-child(1){
+            background-color: red;
+            box-shadow: 5px 1px 46px 5px #e7ff61 inset, 5px 5px 10px 1px #000;
+        }
+        .box:nth-child(2){background-color: green;}
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

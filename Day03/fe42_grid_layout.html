@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>그리드 레이아웃2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /* nomal layout 단점 : border 좀 넣으면 바로 배치가 다 깨짐*/
+        /* 근데 grid layout은안그래요 을매나 편하게요~~ */
+        #wrap {
+            width: 800px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 1배율로 한 줄에 3개 지정*/
+            grid-template-rows: repeat(4, 100px);
+        }
+        .box {
+            padding: 15px;
+            color: rgb(189, 188, 188);
+            font-weight: bold;
+            text-align: center;   
+           
+        }
+        .box1 {
+            background-color: #bdd9ff;
+            grid-column: 1/4;
+        }
+        .box2 {
+            background-color: #c8ffbb;
+            grid-row: 2/4;
+        }
+        .box3 {
+            background-color: #ffce9b;
+            grid-column: 2/4; grid-row: 2/4;
+        }
+        .box4 {
+            background-color: #fcedac;
+            grid-row: 4/5; grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+</body>
+</html>

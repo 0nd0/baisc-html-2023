@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>문서 객체 모델</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        //  window.onload : 윈도우페이지가 렌더링이 완료되고 난 후 마지막에 실행
+        // body 안에 <script>를 위치시키던지 / window.unload를 사용하던지
+        window.onload = function() {
+            var h1Style = document.querySelector('h1').style;
+
+            h1Style.backgroundColor = '#cc55ee';
+            h1Style.fontSize = '50px';
+            h1Style.fontStyle = 'Italic';
+        };
+    </script>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>    
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- style 변경은 body 마지막에 위치해야함-->
+    <!-- <script> // 여기서는 페이지 렌더링 때 같이 실행됨
+        var h1Style = document.querySelector('h1').style;
+
+        h1Style.backgroundColor = '#cc55ee';
+        h1Style.fontSize = '50px';
+        h1Style.fontStyle = 'Italic';
+    </script> -->
+</body>
+</html>

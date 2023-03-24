@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>자바스크립트 이벤트</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        // 이벤트 방법 1
+        // function fnc() {
+        //     alert('머야 이게ㅠㅠ');
+        // }
+
+        // 이벤트 방법 2
+        // 이벤트 매개변수 사용 => event.type으로 종류 확인 가능
+        window.onload = function(event) {
+            alert(event.type); // load 출력됨
+
+            var btnSave = document.getElementById('btnSave');
+            btnSave.onclick = function(e) {
+                alert(e.type); // click 출력됨
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- 이벤트 방법 1 -->
+    <!-- <button ondblclick="fnc();">더블 클릭해보세요~~</button> -->
+
+    <!-- 이벤트 방법 2  : 고전 방식-->
+    <button id="btnSave">클릭</button>
+</body>
+</html>

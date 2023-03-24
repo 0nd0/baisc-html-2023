@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>자바 스크립트</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        /*
+            여러 줄 주석
+        */
+        // 변수 지정
+        var radius = 10;
+        var pi = 3.14159265;
+        var greeting = 'Hello';
+
+        // 출력
+        alert(radius * radius * pi);
+
+       var date = new Date();
+       // 요소추출
+       var year = date.getFullYear();
+       var mon = date.getMonth()+1; // month는 무조건 +1 필요
+       var day = date.getDate(); // getDay는 요일을 말하는거임(월:1, 화:2, ...)
+    
+       alert(year + '년' + mon + '월' + day + '일');
+    </script>
+</head>
+<body>
+    <h1>Hello! Javascript</h1>
+</body>
+</html>

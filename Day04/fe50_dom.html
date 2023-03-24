@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Javascript DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        window.onload = function() {
+            var header = document.getElementById('header');
+
+            header.style.color = 'navy';
+            header.style.backgroundColor = 'lightblue';
+            // .innerHTML : 
+            header.innerHTML = '자바스크립트에서 변경함!';
+
+            // document.querySelector : 같은 태그 중에서 하나만 가져옴
+            var h1 = document.querySelector('h1');
+            h1.style.color = 'red';
+            h1.style.backgroundColor = 'lightpink';
+            h1.innerHTML = 'querySelector';
+
+            // h1에 해당하는 모든걸 가져오려면? => document.querySelectorAll 사용
+            var headings = document.querySelectorAll('h1');
+            for (var i=1; i<headings.length; i++) {
+                var heading = headings[i];
+                heading.style.color = 'orange';
+                heading.style.backgroundColor = '#ff0000';
+                heading.innerHTML = 'querySelectorAll';
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1 id="header">Lorem ipsum dolor sit amet.</h1>   
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h1>Lorem ipsum dolor sit amet.</h1> 
+</body>
+</html>

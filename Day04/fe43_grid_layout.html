@@ -3,42 +3,44 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>그리드 레이아웃2</title>
+    <title>그리드 레이아웃3</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
-        /* nomal layout 단점 : border 좀 넣으면 바로 배치가 다 깨짐*/
-        /* 근데 grid layout은안그래요 을매나 편하게요~~ */
+        /* nomal layout 단점 : border 좀 넣으면 바로 배치가 다 깨짐*/  /* 근데 grid layout은 안그래요 을매나 편하게요~~ */
         #wrap {
             width: 800px;
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* 1배율로 한 줄에 3개 지정*/
             grid-template-rows: repeat(4, 100px);
+            grid-template-areas: 
+                                "box1 box1 box1"
+                                "box2 box3 box3"
+                                "box2 box3 box3"
+                                "box4 box4 box4";
+                                /* 미리 배열로 선언을 해놓는거임 */
+                                /* 안쓰는 영역은 .을 찍으면 됨(근데 모양이 직선, 수직만 가능) */
         }
         .box {
             padding: 15px;
-            color: rgb(189, 188, 188);
-            font-weight: bold;
-            text-align: center;   
+            color: rgb(189, 188, 188); font-weight: bold; text-align: center;   
            
         }
         .box1 {
             background-color: #bdd9ff;
-            grid-column: 1/4;
+            grid-area: box1;
         }
         .box2 {
             background-color: #c8ffbb;
-            grid-row: 2/4;
+            grid-area: box2;;
         }
         .box3 {
             background-color: #ffce9b;
-            grid-column: 2/4; grid-row: 2/4;
-            border: 5px solid lightcoral;
-            /* display : grid로 설정해주면 border를 설정해줘도
-             화면이 이상해지지않음*/
+            grid-area: box3;
+            border: 5px solid lightcoral; /* display : grid로 설정해주면 border를 설정해줘도 화면이 이상해지지않음*/
         }
         .box4 {
             background-color: #fcedac;
-            grid-row: 4/5; grid-column: 1/4;
+            grid-area: box4;
         }
     </style>
 </head>

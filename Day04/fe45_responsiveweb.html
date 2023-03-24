@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>반응형웹 뷰포트</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- viewport가 반응형 웹을 위한 코드임 -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style> 
+        * { margin: 0; padding: 0;}
+        #menu {
+            width: 260px;
+            float: left;
+        }
+        #section {
+            width: 700px;
+            float: right;
+        }
+        li {
+            list-style: none;
+        }
+        /* 스마트폰 */
+        @media screen and (max-width: 450px) and (orientation : portrait) {
+            /* orientation : portrait => 기본 화면일 때 */
+            body { 
+                background-color: rgb(208, 230, 250);
+                width: auto;
+            }
+            #menu { width: auto; float: none; }
+            #section { width: auto; float: none; }
+        }
+        /* 태블릿 */
+        @media screen and (min-width: 451px) and (max-width: 960px) and (orientation : portrait) {
+            body { 
+                background-color: rgb(255, 204, 204); 
+                width: auto;
+            }
+            #menu { width: auto; float: none; }
+            #section { width: auto; float: none; }
+        }
+        /* 데스크탑 */
+        @media screen and (min-width: 961px) and (orientation : portrait) {
+            body { 
+                    background-color: rgb(202, 248, 202); 
+                    width: 960px;
+                    margin: 0 auto;
+                    overflow: hidden;
+            }
+        }
+
+        @media screen and (orientation : landscape) {
+            /* orientation : landscape => 화면 방향 돌렸을 때 */
+            body { background-color: rgb(197, 194, 194);}
+        }
+
+        @media print {
+            body { background-color: rgb(255, 197, 206);}
+            h1 {color: rgb(173, 173, 216); font-size: 50px;}
+        }
+    </style>
+
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Product</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>Lorem ipsum dolor sit amet.</h1>   
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perferendis, repellendus eum magni vel, tenetur suscipit autem id sint officiis ipsum perspiciatis. Molestias obcaecati et saepe, odio a aperiam laboriosam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perferendis, repellendus eum magni vel, tenetur suscipit autem id sint officiis ipsum perspiciatis. Molestias obcaecati et saepe, odio a aperiam laboriosam!</p>
+    </div>
+    
+</body>
+</html>

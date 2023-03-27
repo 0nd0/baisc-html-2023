@@ -40,6 +40,11 @@ Java 개발자 과정 프론트앤드 리포지토리
 
 ## 5일차
 - 프론트엔드 학습
-    - Javascript, jQuery 연동
+    - Javascript / jQuery 연동
     - Bootstrap 학습
+    - Bootstrap Album Example 클로닝
+
+## 6일차
+- 프론트엔드 학습
+    - Bootstrap Album Example 클로닝 마무리
     - 포트폴리오 웹사이트 만들기

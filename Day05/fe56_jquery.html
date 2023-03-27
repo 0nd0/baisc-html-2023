@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>js/jquery 연동</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        window.onload = function() {
+            // input 객체 가져오기
+            var jumin1 = document.getElementById('jumin1'); 
+            var jumin2 = document.getElementById('jumin2');
+
+            // 자동 포커스 해주기
+            jumin1.focus();
+
+            // 키보드 입력 시 이벤트 발생
+            jumin1.onkeydown = function() {
+                console.log(jumin1.value.length)
+                if(jumin1.value.length >= 6) { // 여섯 자리 이상 입력되면
+                    jumin2.focus(); // 주민번호 뒷자리 입력창으로 포커스 이동
+                }
+            };
+
+            // 주민번호 뒷자리를 다 지웠을 때 앞자리 칸으로 이동하도록해줌
+            jumin2.onkeydown = function(e) {
+                var event = e || window.event;
+                if (event.keyCode == 8 && jumin2.value.length == 0) {
+                    // keyCode = 8 => backspace를 의미함 // 13 => Enter 의미
+                    jumin1.focus();
+                } 
+            }
+        };
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="text" maxlength="6" id="jumin1">
+        <span>-</span>
+        <input type="password" maxlength="7" id="jumin2">
+    </form>
+</body>
+</html>

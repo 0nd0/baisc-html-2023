@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jQuery로 객체 추가</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            // body 태그내에 추가
+            // 방법1
+            $('body').append('<h1>1. Create object by jQuery</h1>'); 
+            // 방법1
+            $('<h1>2. Create object by jQuery</h1>').appendTo('body');
+
+
+            for(var i=0; i<3; i++){
+                // 방법3
+                var h1= $('<h1>Create object for ' + i + '</h1>').css({
+                    'background-color' : 'yellow',
+                    'color' : 'orange'
+                });
+
+                $('body').append(h1);
+            }
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

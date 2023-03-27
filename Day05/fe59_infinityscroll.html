@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>무한 스크롤</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            var count = 0;
+            var appendDoc = function() {
+                for(var i=0; i<20; i++) {
+                    $('<h1>무한 스크롤 ' + count + '</h1>').css({
+                        'background-color' : 'rgb(' + count%256 + ', ' + count%256 + ', ' + count%256 + ')',
+                        'color' : 'white'
+                    }).appendTo('body');
+                    count++;
+                };
+            };
+            appendDoc();
+
+            $(window).scroll(function() {
+                var scrollHeight = $(window).scrollTop() + $(window).height();
+                var docHeight = $(document).height();
+                
+                // console.log(scrollHeight + ' vs ' + docHeight); 를 통해 값 조정 필요 
+                if(scrollHeight == docHeight) {
+                    appendDoc();
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -48,3 +48,6 @@ Java 개발자 과정 프론트앤드 리포지토리
 - 프론트엔드 학습
     - Bootstrap Album Example 클로닝 마무리
     - 포트폴리오 웹사이트 만들기
+
+        - 6일차 부트스트랩 클로닝 결과
+        <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/bootstrap_album_theme.png" width="700">

@@ -26,7 +26,7 @@ Java 개발자 과정 프론트앤드 리포지토리
     - Grid 레이아웃
 
         - 3일차 레이아웃<br>
-        <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day03.png" width="600">
+        <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day03.png" width="700">
 
 ## 4일차
 - 프론트엔드 학습
@@ -36,7 +36,7 @@ Java 개발자 과정 프론트앤드 리포지토리
     - jQuery
 
         - 4일차 그리드레이아웃 포토 갤러리
-        <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/gallery.png" width="600">
+        <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/gallery.png" width="800">
 
 ## 5일차
 - 프론트엔드 학습
@@ -49,5 +49,5 @@ Java 개발자 과정 프론트앤드 리포지토리
     - Bootstrap Album Example 클로닝 마무리
     - 포트폴리오 웹사이트 만들기
 
-        - 6일차 부트스트랩 클로닝 결과
-        <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/bootstrap_album_theme.png" width="700">
+        - 6일차 부트스트랩 앨범 페이지
+        <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/bootstrap_album_theme.png" width="800">

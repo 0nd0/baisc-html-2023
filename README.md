@@ -10,8 +10,7 @@ Java 개발자 과정 프론트앤드 리포지토리
     - HTML5 기본태그
 
     - 학습내용
-<!-- ![멀티미디어](https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day01.png) : 이렇게 사용하면 사이즈 변경 불가 -->
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day01.png" width="300">
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day01.png" width="700">
 
 ## 2일차
 - HTML 5 입력태그
@@ -33,7 +32,7 @@ Java 개발자 과정 프론트앤드 리포지토리
 - jQuery
 
     - 그리드레이아웃 포토 갤러리
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/gallery.png" width="800">
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/gallery.png" width="700">
 
 ## 5일차
 - Javascript / jQuery 연동
@@ -44,7 +43,7 @@ Java 개발자 과정 프론트앤드 리포지토리
 - Bootstrap Album Example 클로닝 마무리
 - 핀터레스트 스타일 웹페이지 클로닝
     - Bootstrap 앨범 페이지
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/bootstrap_album_theme.png" width="800">
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/bootstrap_album_theme.png" width="700">
 
 ## 7일차
 - 핀터레스트 스타일 웹페이지 마무리
@@ -54,11 +53,11 @@ Java 개발자 과정 프론트앤드 리포지토리
     - ImageLoaded Library
     - Lightbox 구현
 
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio1.png" width="800">
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio2.png" width="800">
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio1.png" width="700">
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio2.png" width="700">
 
 - Parallax Scrolling Website
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.png" width="800">
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.png" width="700">
 
 ## 8일차
 - Single Page Template

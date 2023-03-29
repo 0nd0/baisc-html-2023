@@ -54,4 +54,12 @@ Java 개발자 과정 프론트앤드 리포지토리
 ## 7일차
 - 프론트엔드 학습
     - 핀터레스트 스타일 웹페이지 마무리
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio1.png" width="800">
+        - Bootstrap 5.3.0
+        - jQuery 3.6.4
+        - Masonry layout Library
+        - ImageLoaded Library
+        -Lightbox 구현
+        
+        - 핀터레스트 웹 클로닝 화면
+        <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio1.png" width="800">
+        <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio2.png" width="800">

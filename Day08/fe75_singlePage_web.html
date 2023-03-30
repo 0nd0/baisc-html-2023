@@ -54,22 +54,94 @@
             //         }
             //     });
             // });
-            $('#menu_about').click(function () {
-                $(this).addClass('active');
+
+            // 이건 클릭 시에만 동작함
+            // $('#menu_about').click(function () {
+            //     console.log($(window).scrollTop());
+            //     $(this).addClass('active');
+            //     $('#menu_portfolio').removeClass('active');
+            //     $('#menu_signup').removeClass('active');
+            // });
+            // $('#menu_portfolio').click(function () {
+            //     console.log($(window).scrollTop());
+            //     $(this).addClass('active');
+            //     $('#menu_about').removeClass('active');
+            //     $('#menu_signup').removeClass('active');
+            // });
+            // $('#menu_signup').click(function () {
+            //     $(this).addClass('active');
+            //     $('#menu_about').removeClass('active');
+            //     $('#menu_portfolio').removeClass('active');
+            // });
+            // const about = document.querySelector('#about');
+            // const aboutHeight = about.getBoundingClientRect().top;
+            // const menuAbout = document.querySelector('#menu_about');
+            // const portfolio = document.querySelector('#portfolio');
+            // const portfolioHeight = portfolio.getBoundingClientRect().top; 
+            // const menuPortfolio = document.querySelector('#menu_portfolio');
+            // const signup = document.querySelector('#signup');
+            // const signupHeight = signup.getBoundingClientRect().top;
+            // const menuSignup = document.querySelector('#menu_signup');
+            // document.addEventListener('scroll', () => {
+            //     if (window.scrollY > aboutHeight && window.scrollY < portfolioHeight) {
+            //         // console.log(window.scrollY);
+            //         menuAbout.classList.add('active');
+            //         menuPortfolio.classList.remove('active');
+            //         menuSignup.classList.remove('active');
+            //     } else if (window.scrollY > portfolioHeight && window.scrollY < signupHeight ) {
+            //         // console.log(window.scrollY);
+            //         menuAbout.classList.remove('active');
+            //         menuPortfolio.classList.add('active');
+            //         menuSignup.classList.remove('active');
+            //     } else if(window.scrollY > signupHeight) {
+            //         // console.log(window.scrollY);
+            //         menuAbout.classList.remove('active');
+            //         menuPortfolio.classList.remove('active');
+            //         menuSignup.classList.add('active');
+            //     }
+            // });
+
+
+            var about = document.getElementById('about');
+            var aboutHeight = about.getBoundingClientRect().top;
+            var portfolio = document.getElementById('portfolio');
+            var portfolioHeight = portfolio.getBoundingClientRect().top;
+            var signup = document.getElementById('signup');
+            var signupHeight = signup.getBoundingClientRect().top;
+
+            $(document).on('scroll', function() {
+                if (window.scrollY > aboutHeight && window.scrollY < portfolioHeight) {
+                    $('#menu_about').addClass('active');
+                    $('#menu_portfolio').removeClass('active');
+                    $('#menu_signup').removeClass('active');
+                } else if (window.scrollY > portfolioHeight && window.scrollY < signupHeight ) {
+                    $('#menu_about').removeClass('active');
+                    $('#menu_portfolio').addClass('active');
+                    $('#menu_signup').removeClass('active');
+                } else if(window.scrollY > signupHeight) {
+                    $('#menu_about').removeClass('active');
+                    $('#menu_portfolio').removeClass('active');
+                    $('#menu_signup').addClass('active');
+                }
+            });
+
+            $('#menu_about').on("click", function() {
+                $('#menu_about').addClass('active');
                 $('#menu_portfolio').removeClass('active');
                 $('#menu_signup').removeClass('active');
             });
-            $('#menu_portfolio').click(function () {
-                $(this).addClass('active');
+            $("#menu_portfolio").on("click", function() {
+                $('#menu_portfolio').addClass('active');
                 $('#menu_about').removeClass('active');
                 $('#menu_signup').removeClass('active');
             });
-            $('#menu_signup').click(function () {
-                $(this).addClass('active');
+            $("#menu_signup").on("click", function() {
+                $('#menu_signup').addClass('active');
                 $('#menu_about').removeClass('active');
                 $('#menu_portfolio').removeClass('active');
             });
         });
+
     </script>
 </head>
 <body id="page-top">

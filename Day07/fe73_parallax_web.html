@@ -16,6 +16,32 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src='script/parallax.js'></script>
+    <script>
+        // 사진 깨지는거 해결하기
+        // 최초
+        $(document).ready(function() {
+            var image = document.getElementById('hill1');
+            console.log(`${image.width} x ${image.height}`);
+            // console.log(image.width + 'x' + image.height);
+
+            $('.contents').css({
+                'position' : 'absolute',
+                'top': image.height + 'px'
+            });
+        });
+
+        // 브라우저 사이즈 바뀔 때 마다
+        $(window).resize(function() {
+            var image = document.getElementById('hill1');
+            console.log(`${image.width} x ${image.height}`);
+            // console.log(image.width + 'x' + image.height);
+
+            $('.contents').css({
+                'position' : 'absolute',
+                'top': image.height + 'px'
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -47,7 +73,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quas beatae id commodi expedita, minima odit minus amet voluptates voluptas suscipit eius, voluptate repellat rerum culpa veritatis facere iusto cumque repellendus inventore ullam. Possimus, exercitationem, eveniet quod totam blanditiis et vero dignissimos beatae tempore magni in dolores pariatur rem sed ipsam unde quam soluta ab. Voluptates, maxime beatae aperiam praesentium sunt doloremque qui excepturi dolore incidunt accusamus quibusdam magnam ab quae iste odit, porro quisquam maiores ducimus ad. Dolores, quas. Quaerat rem dignissimos officia modi eaque nesciunt inventore consequatur, aspernatur esse quod non ea quia et sint animi, natus porro ex excepturi quasi temporibus obcaecati libero facere doloribus ullam! Praesentium quidem, perferendis blanditiis numquam excepturi fugit enim cupiditate saepe nam voluptate laboriosam eum, sit ullam culpa itaque quia atque accusamus repellendus temporibus in autem neque dolorum! Deleniti repellat quo ea. Minima iure dolorum molestias nemo laborum, tempora amet sunt rem dolorem eligendi? Officiis nihil beatae veniam architecto ipsa excepturi minima delectus, ad itaque? Tempora modi magni facere sint vero dolorum id numquam aperiam sequi quae cupiditate blanditiis dolores aspernatur similique explicabo in error, dignissimos architecto? Culpa, ipsum explicabo saepe quidem voluptatum nobis quibusdam aliquid voluptate eius assumenda iure facere aut, repellendus, quis ipsam fugiat itaque quod ut sapiente dolores consequatur delectus nesciunt illum. Officiis optio perferendis explicabo distinctio quis. Rerum sed illo nisi fuga tenetur maxime, excepturi saepe harum cupiditate similique a, atque doloremque eveniet labore perferendis totam ullam minus libero! Ducimus nostrum mollitia praesentium recusandae! At ex aut maiores! Fugit totam eos ea accusamus aliquam pariatur inventore optio porro non laudantium commodi dolor facere, repellat neque labore iusto possimus quam nemo necessitatibus officia, sint dolorem! Vitae qui nisi facilis eligendi recusandae ex laudantium iusto deserunt et adipisci, omnis accusamus beatae porro. Quaerat ipsam expedita aperiam sit, autem pariatur ducimus. <br><br>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, soluta doloribus eligendi expedita distinctio at possimus id recusandae tempora cum ducimus quidem reprehenderit, aperiam alias eius odit? Enim ducimus impedit quasi vitae iste quae omnis quis sit, repellendus quo debitis nobis facilis in, amet commodi fugit accusamus. Earum enim atque magni tempore illum. Ipsa nostrum consequatur ad laboriosam dolore eius. Temporibus asperiores recusandae ipsa tempora qui fuga. Beatae, cupiditate. Quas, deserunt. Architecto consectetur aperiam tempore culpa aliquid sit distinctio totam facilis sed harum, commodi ratione iste vitae ut molestias quo repellendus dignissimos doloribus natus in? Iste velit cupiditate error totam?</p>
     </section>
-    <footer>
+    <!-- <footer>
         <nav>
             <a href="#">Blog</a>
             <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
@@ -59,7 +85,7 @@
             <span>email : ming9396@naver.com</span><br>
             <span>Copyright &copy; 2022. Codehal. All Rights Reserved.</span>
         </p>
-    </footer>
+    </footer> -->
 
     <!-- 2. Bootstrap용 js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"

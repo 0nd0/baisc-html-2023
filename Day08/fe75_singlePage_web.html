@@ -102,14 +102,17 @@
             // });
 
 
-            var about = document.getElementById('about');
-            var aboutHeight = about.getBoundingClientRect().top;
-            var portfolio = document.getElementById('portfolio');
-            var portfolioHeight = portfolio.getBoundingClientRect().top;
-            var signup = document.getElementById('signup');
-            var signupHeight = signup.getBoundingClientRect().top;
+            
 
             $(document).on('scroll', function() {
+
+                var about = document.getElementById('about');
+                var aboutHeight = about.getBoundingClientRect().top;
+                var portfolio = document.getElementById('portfolio');
+                var portfolioHeight = portfolio.getBoundingClientRect().top;
+                var signup = document.getElementById('signup');
+                var signupHeight = signup.getBoundingClientRect().top;
+            
                 if (window.scrollY > aboutHeight && window.scrollY < portfolioHeight) {
                     $('#menu_about').addClass('active');
                     $('#menu_portfolio').removeClass('active');
@@ -123,22 +126,6 @@
                     $('#menu_portfolio').removeClass('active');
                     $('#menu_signup').addClass('active');
                 }
-            });
-
-            $('#menu_about').on("click", function() {
-                $('#menu_about').addClass('active');
-                $('#menu_portfolio').removeClass('active');
-                $('#menu_signup').removeClass('active');
-            });
-            $("#menu_portfolio").on("click", function() {
-                $('#menu_portfolio').addClass('active');
-                $('#menu_about').removeClass('active');
-                $('#menu_signup').removeClass('active');
-            });
-            $("#menu_signup").on("click", function() {
-                $('#menu_signup').addClass('active');
-                $('#menu_about').removeClass('active');
-                $('#menu_portfolio').removeClass('active');
             });
         });
 

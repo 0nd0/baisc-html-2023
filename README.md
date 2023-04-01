@@ -53,14 +53,14 @@ Java 개발자 과정 프론트앤드 리포지토리
     - ImageLoaded Library
     - Lightbox 구현
 
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio1.png" width="700">
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio2.png" width="700">
+<img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio1.png" width="700"> |<img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio2.png" width="700">
+--- | --- |  
 
 - Parallax Scrolling Website
-    <div>
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.png">|
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.gif">--|--|
-    </div>
+
+<img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.png"> |<img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.gif">
+--- | --- | 
+
 
 ## 8일차
 - Grayscale Single Page Template

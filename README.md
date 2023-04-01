@@ -58,8 +58,8 @@ Java 개발자 과정 프론트앤드 리포지토리
 
 - Parallax Scrolling Website
     <div>
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.png">
-    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.gif">
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.png">|
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.gif">--|--|
     </div>
 
 ## 8일차

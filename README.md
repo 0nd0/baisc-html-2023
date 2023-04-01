@@ -53,8 +53,7 @@ Java 개발자 과정 프론트앤드 리포지토리
     - ImageLoaded Library
     - Lightbox 구현
 
-<img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio1.png" width="700"> |<img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio2.png" width="700">
---- | --- |  
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio1.gif" width="700"> 
 
 - Parallax Scrolling Website
 

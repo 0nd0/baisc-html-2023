@@ -58,6 +58,7 @@ Java 개발자 과정 프론트앤드 리포지토리
 
 - Parallax Scrolling Website
     <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.png" width="700">
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio3.gif" width="700">
 
 ## 8일차
 - Grayscale Single Page Template

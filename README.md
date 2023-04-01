@@ -64,8 +64,8 @@ Java 개발자 과정 프론트앤드 리포지토리
 
 ## 8일차
 - Grayscale Single Page Template
+
     <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio4.gif" width="700">
-- SB Admin Page
 
 ## 9일차
 - Sb Admin Page

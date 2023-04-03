@@ -66,7 +66,7 @@ Java 개발자 과정 프론트앤드 리포지토리
         - Lightbox 구현
 
     <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio1.png"> |<img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio2.png">
-        --- | --- |
+    --- | --- |
 
     <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio1.gif" width="700"> 
 

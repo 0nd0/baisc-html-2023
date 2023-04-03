@@ -135,15 +135,6 @@ p {
     margin-right: 3px;
 }
 
-.btn-primary {
-    background-color: #7c8186;
-    border: none;
-}
-.btn-primary:hover,
-.btn-primary:active {
-    background-color: #8c8c8d;
-    border: none;
-}
 /* 전체 레이아웃 끝 */
 
 /* 탑메뉴 */
@@ -357,17 +348,25 @@ p {
 
 
 /* 에러페이지 css */
-#layoutError {
+#layoutError,
+#layoutAuthentication {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-#layoutError #layoutError_content {
+#layoutError #layoutError_content,
+#layoutAuthentication #layoutAuthentication_content {
     min-width: 0;
     flex-grow: 1; /* 특정 컨텐츠 영역을 제외한 나머지 영역을 채우고 싶을 때 사용  */
 }
 
-#layoutError #layoutError-footer {
+#layoutError #layoutError-footer,
+#layoutAuthentication #layoutAuthentication_footer {
     min-width: 0;
+}
+
+#layoutError img {
+    width: 300px;
+    margin-bottom: 10px;
 }

@@ -93,5 +93,5 @@ Java 개발자 과정 프론트앤드 리포지토리
         - Chart.js
         - [Simple DataTables.js](https://github.com/fiduswriter/simple-datatables)
 
-        <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio6.png" width="700">
+        <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio6.gif">
 

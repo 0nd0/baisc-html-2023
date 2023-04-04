@@ -347,7 +347,7 @@ p {
 }
 
 
-/* 에러페이지 css */
+/* 에러페이지, 로그인 페이지 css */
 #layoutError,
 #layoutAuthentication {
     display: flex;
@@ -369,4 +369,8 @@ p {
 #layoutError img {
     width: 300px;
     margin-bottom: 10px;
+}
+
+#layoutAuthentication {
+ background-color: #f2f2f2;
 }

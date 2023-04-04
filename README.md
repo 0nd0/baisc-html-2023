@@ -98,3 +98,8 @@ Java 개발자 과정 프론트앤드 리포지토리
 
         <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio6.gif">
 
+## 11일차
+- 프론트엔드 실습
+    - Do it! 한 권으로 끝내는 웹 기본 교과서 HTML+CSS+자바스크립트 웹 표준의 정석 특별 부록 클로닝
+
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/portfolio7.png">

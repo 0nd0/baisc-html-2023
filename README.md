@@ -106,7 +106,14 @@ Java 개발자 과정 프론트앤드 리포지토리
 
 ## 12일차
 - 프론트엔드 실습
-    - [다음 우편번호 API](https://postcode.map.daum.net/guide)
-    - [Quill Editor를 활용한 게시글 만들기](https://quilljs.com/)
+    - [다음 우편번호 API](https://postcode.map.daum.net/guide) 기능을 넣은 회원가입 화면
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day12_join.png" width="700">
+
+    - [Quill Editor](https://quilljs.com/)를 활용한 게시글 만들기
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day12_board.png" width="700">
+
     - [카카오맵 API](https://apis.map.kakao.com/web/)
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day12_map.png" width="700">
+
     - [mqtt cdn을 활용한 채팅 화면 만들기](https://cdnjs.com/libraries/mqtt)
+    <img src="https://raw.githubusercontent.com/0nd0/basic-html-2023/main/image/day12_chat.gif" width="700">

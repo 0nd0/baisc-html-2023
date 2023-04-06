@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>이경민</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- 1. Bootstrap용 css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0; padding: 0;
+            font-family: 'NanumGothic', sans-serif;
+        }
+
+        body {
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        #main-header {
+            width: 100%;
+            height: 150px;
+            padding-left: 20px;
+            font-weight: bold;
+            background-color: #757575;
+        }
+
+        .header-title {
+            margin-bottom: 0;
+            font-size: 4rem;
+            color: #ffd400;
+        }
+
+        #main-navigation {
+            height: 50px;
+            background-color: #ffd400;
+        }
+
+        #main-navigation > ul {
+            padding-left: 20px;
+        }
+
+        #main-navigation > ul > li {
+            display: inline;
+        }
+
+        #main-navigation > ul > li > a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: black;
+        }
+
+        /* #main-navigation > ul > li:last-child > a {
+            text-decoration: underline;
+            color: rgb(76, 118, 255);
+            font-weight: 500;
+        } */
+
+        #main-navigation > ul > li > a:focus,
+        #main-navigation > ul > li > a:hover {
+            text-decoration: underline;
+            color: rgb(76, 118, 255);
+            font-weight: 500;
+        }
+        
+        article, aside {
+            height: 120px;
+            color: rgb(180, 180, 180);
+            font-weight: bold;
+        }
+
+        article {
+            background-color: #3a3939;
+        }
+
+        article h4 {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        aside {
+            background-color: #757575;
+        }
+       
+        footer {
+            background-color: #ffd400;
+            font-size: 14px;
+            color: #757575;
+        }
+    </style>
+    <!-- jQuery 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#menu_home').click(function () {
+               alert("홈 메뉴!");
+            });
+            $('#menu_about').click(function () {
+               alert("어바웃미 메뉴!");
+            });
+            $('#menu_portfolio').click(function () {
+               alert("포트폴리오 메뉴!");
+            });
+            $('#menu_contact').click(function () {
+               alert("컨택트 메뉴!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <header id="main-header" class="pt-5">
+            <p class="header-title">한글 Page</p>  
+        </header>
+
+        <nav id="main-navigation" class="d-flex align-items-center pt-3">
+            <ul id="main-navba">
+                <li><a id="menu_home" href="#">Home</a></li>
+                <li><a id="menu_about"  href="#">About Me</a></li>
+                <li><a id="menu_portfolio"  href="#">Portfolio</a></li>
+                <li><a id="menu_contact"  href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="container" id="container">
+            <div class="row">
+                <article class="col-9 px-4 py-4">
+                    <h4 class="py-3">섹션1</h4>
+                    <p class="small">섹션내용입니다.</p>
+                </article>
+
+                <aside  class="col-3 py-4">
+                    <p class="small">배너영역</p>
+                </aside>
+            </div>
+        </div>
+    
+        <footer>
+            <div class="text-muted py-3 d-flex justify-content-center">&copy; 2023. 홍길동. inc reserved</div>
+        </footer>
+    </div>
+    
+
+    <!-- 2. Bootstrap용 js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+</html>

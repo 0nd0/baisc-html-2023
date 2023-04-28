@@ -25,10 +25,26 @@
             <!-- 버튼 -->
             <input type="button" value="클릭">
             <input type="reset" value="초기화">
-            <input type="submit" value="승인"><br>
+            <input type="button" value="승인" onclick="test()"><br>
             <!-- input:image 클릭 => 이미지의 x,y값 전달 -->
             <input type="image" src="http://placehold.it/100x100"><br>
             <img src="http://placehold.it/100x100">
         </form>
+    
+    <script>
+        
+        function test() {
+            const gender = '';
+        document.getElementsByName("gender");
+        if(document.getElementsByName("gender")[0].checked == true) {
+            gender = document.getElementsByName("gender")[0].value;
+        } else {
+            gender = document.getElementsByName("gender")[1].value;
+        }
+            alert(gender);
+        }
+
+    </script>
     </body>
+
 </html>

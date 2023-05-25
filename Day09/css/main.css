@@ -81,7 +81,7 @@ p {
 
 .sb-sidenav-toggled #layoutTotal #layoutLeftSide {
     /* 토글버튼 누르면 => 왼쪽 메뉴 숨기기! */
-    transform: translateX(-225px); /* transform:translateX() : 좌우(수평 방향)의 이동 거리 값을 지정 */
+    transform: translateX(-225px); transform:translateX() : 좌우(수평 방향)의 이동 거리 값을 지정
 }
 
 .sb-sidenav-toggled #layoutTotal #layoutContent {
